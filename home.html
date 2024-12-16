@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <style>
+        /* General body styles */
+        body.homepage {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa; /* Light background */
+            color: #343a40; /* Dark text color */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar styling */
+        nav.navbar {
+            background-color: #007bff; /* Primary blue */
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            color: #ffffff !important; /* White text for links */
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-nav .nav-item .nav-link:hover {
+            color: #0056b3; /* Darker blue on hover */
+        }
+
+        .bookshala-title {
+            font-size: 1.5rem;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        /* Layout for homepage content */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        /* Main section */
+        .main-section {
+            text-align: center;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-section h2 {
+            color: #007bff;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .main-section p {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        .btn-custom {
+            background-color: #28a745; /* Green button */
+            color: white;
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #218838; /* Darker green on hover */
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .bookshala-title {
+                font-size: 1.25rem;
+            }
+
+            .main-section h2 {
+                font-size: 1.75rem;
+            }
+
+            .main-section p {
+                font-size: 0.9rem;
+            }
+
+            .btn-custom {
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .bookshala-title {
+                font-size: 1.1rem;
+            }
+
+            .main-section h2 {
+                font-size: 1.5rem;
+            }
+
+            .main-section p {
+                font-size: 0.8rem;
+            }
+
+            .btn-custom {
+                font-size: 0.9rem;
+                padding: 8px 18px;
+            }
+        }
+    </style>
+</head>
+<body class="homepage">
+    <!-- Header with Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <h1 class="bookshala-title ms-3">ToDoList Web Application</h1>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="todo_List_page.html">ToDo List</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">LogOut</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <section class="main-section">
+            <h2>Welcome to the ToDo List Web Application</h2>
+            <p>Manage your daily tasks effortlessly. Click the button below to view and manage your tasks.</p>
+            <a href="http://127.0.0.1:5500/todo_List_page.html" class="btn-custom">View ToDo List</a>
+        </section>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
